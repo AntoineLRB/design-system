@@ -1,0 +1,21 @@
+{
+  "repository": "@owner/repositoryName",
+  "base": "master",
+  "head": "specify",
+  "rules": [
+    {
+      "path": "my-styles/my-colors.css",
+      "parsers": [
+        {
+          "name": "camelcasify",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-css-custom-properties"
+        }
+      ]
+    }
+  ]
+}
